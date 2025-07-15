@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+    background-color: black;
+
+}
+.box1{
+    width: 100%;
+    max-width: 1200px;
+    height:auto;
+    border-radius: 8px;
+    border:5px solid black;
+    background-color: rgb(226, 136, 19);
+}
+.box2{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    height:auto;
+    border-radius: 8px;
+    background-color: cadetblue;
+    border:4px solid rgb(119, 105, 105);
+}
+.box1 img{
+    width:100%;
+    height:auto;
+}
+.box2 .content{
+    text-align: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box2 .content1
+{
+    text-align: center;
+}
+ .image{
+    width: 60%;
+    max-width: 300px;
+    margin: auto;
+    height: auto;
+    border: 4px solid;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    justify-content: space-between;
+}
+.image img{
+    width: 20px;
+    height: 20px;
+}
+.last{
+    text-align: center;
+}
+.last h2{
+    
+    text-shadow: 2px 2px 5px;
+}
+.last button{
+    
+    width: 80%;
+    margin: auto;
+    font-size: clamp(16px ,2vw ,20px);
+    background-color: rgb(202, 169, 233);
+
+}
+@media(max-width:600px){
+    box2{
+        width: 80%;
+    }
+    .image img {
+        flex-direction: column;
+        align-items: center;
+    }
+    .last button{
+        width:60%;
+        font-size: 16px;
+    }
+}
